@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+// urls
+$imageURL: "../images/drawers.jpg";
+$avatarURL: "../images/avatar-michelle.jpg";
+
+// colors
+$Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+$Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+$Grayish_Blue: hsl(212, 23%, 69%);
+$Light_Grayish_Blue: hsl(210, 46%, 95%);
+
+// typography
+$body_font_Size: 13px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// wrapper class
+
+.wrapper {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $Light_Grayish_Blue;
+
+  .container {
+    background-color: white;
+    box-shadow: 2px 5px 40px rgba($color: #000000, $alpha: 0.06);
+    width: 45em;
+    height: 18em;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+
+    .image {
+      background-image: url($imageURL);
+      background-size: cover;
+      height: inherit;
+      width: 40%;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding: 2em 2em 0px 2.5em;
+      justify-content: space-between;
+    }
+  }
+}
+
+// col class
+
+.col {
+  .article {
+    h4 {
+      color: $Very_Dark_Grayish_Blue;
+      font-size: 20px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 1em;
+    }
+    p {
+      padding-right: 1em;
+      color: $Desaturated_Dark_Blue;
+      font-family: "Manrope", sans-serif;
+      font-size: $body_font_Size;
+      font-weight: 500;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+    justify-content: space-between;
+  }
+}
+
+// row class
+
+.row {
+  .avatar {
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    background-image: url($avatarURL);
+    background-size: cover;
+  }
+  .profile-wrapper {
+    display: flex;
+  }
+  .share {
+    background-color: $Light_Grayish_Blue;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    cursor: pointer;
+  }
+}
+
+// profile wrapper class
+.profile-wrapper {
+  .profile {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+// profile class
+.profile {
+  .name {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: $Very_Dark_Grayish_Blue;
+  }
+  .date {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $Desaturated_Dark_Blue;
+  }
+}

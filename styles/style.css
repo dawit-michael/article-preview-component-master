@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 98vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+}
+
+.wrapper .container {
+  background-color: white;
+  -webkit-box-shadow: 2px 5px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 2px 5px 40px rgba(0, 0, 0, 0.06);
+  width: 45em;
+  height: 18em;
+  border-radius: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .container .image {
+  background-image: url("../images/drawers.jpg");
+  background-size: cover;
+  height: inherit;
+  width: 40%;
+}
+
+.wrapper .container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  padding: 2em 2em 0px 2.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col .article h4 {
+  color: #48556a;
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1em;
+}
+
+.col .article p {
+  padding-right: 1em;
+  color: #6d7f97;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.col .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row .avatar {
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 50%;
+  background-image: url("../images/avatar-michelle.jpg");
+  background-size: cover;
+}
+
+.row .profile-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row .share {
+  background-color: #ecf2f8;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+  cursor: pointer;
+}
+
+.profile-wrapper .profile {
+  margin-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.profile .name {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #48556a;
+}
+
+.profile .date {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6d7f97;
+}
+/*# sourceMappingURL=style.css.map */
