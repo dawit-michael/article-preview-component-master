@@ -26,10 +26,9 @@
   background-color: white;
   -webkit-box-shadow: 2px 5px 40px rgba(0, 0, 0, 0.06);
           box-shadow: 2px 5px 40px rgba(0, 0, 0, 0.06);
-  width: 45em;
-  height: 18em;
+  max-width: 45em;
+  min-height: 18em;
   border-radius: 12px;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +39,7 @@
   background-size: cover;
   height: inherit;
   width: 40%;
+  border-radius: 12px 0px 0px 12px;
 }
 
 .wrapper .container .col {
@@ -152,6 +152,7 @@
   background-color: #48556a;
   position: absolute;
   z-index: 1;
+  visibility: hidden;
   width: 16em;
   height: 2.8em;
   margin-bottom: 8em;
@@ -182,11 +183,7 @@
 }
 
 .active {
-  visibility: visible;
-}
-
-.share:hover .tooltip-content {
-  visibility: visible;
+  visibility: visible !important;
 }
 
 .tooltip-content h6 {
@@ -200,5 +197,17 @@
 
 .tooltip-content img {
   margin-left: 1em;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

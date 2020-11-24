@@ -31,10 +31,10 @@ $body_font_Size: 13px;
   .container {
     background-color: white;
     box-shadow: 2px 5px 40px rgba($color: #000000, $alpha: 0.06);
-    width: 45em;
-    height: 18em;
+    max-width: 45em;
+    min-height: 18em;
     border-radius: 12px;
-    overflow: hidden;
+
     display: flex;
 
     .image {
@@ -42,6 +42,7 @@ $body_font_Size: 13px;
       background-size: cover;
       height: inherit;
       width: 40%;
+      border-radius: 12px 0px 0px 12px;
     }
 
     .col {
@@ -140,7 +141,7 @@ $body_font_Size: 13px;
     background-color: $Very_Dark_Grayish_Blue;
     position: absolute;
     z-index: 1;
-    // visibility: hidden;
+    visibility: hidden;
     width: 16em;
     height: 2.8em;
     margin-bottom: 8em;
@@ -164,12 +165,7 @@ $body_font_Size: 13px;
   }
 }
 .active {
-  visibility: visible;
-}
-.share:hover {
-  .tooltip-content {
-    visibility: visible;
-  }
+  visibility: visible !important;
 }
 
 .tooltip-content {
@@ -183,5 +179,14 @@ $body_font_Size: 13px;
   }
   img {
     margin-left: 1em;
+  }
+}
+
+// responsive
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 }
