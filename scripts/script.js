@@ -1,9 +1,9 @@
 $(document).ready(function () {
   anime({
     targets: ".container",
-    easing: "easeOutExpo",
-    translateY: [-50, 0],
-    duration: 3000,
+    easing: "linear",
+    translateY: [50, 0],
+    duration: 400,
     loop: false,
   });
   $("#shareBtn").click(function (e) {
